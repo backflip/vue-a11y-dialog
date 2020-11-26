@@ -31,7 +31,7 @@ export default {
       css: true
     }),
     babel({
-      include: ['node_modules/a11y-dialog', 'node_modules/portal-vue']
+      plugins: ['transform-es2015-shorthand-properties']
     }),
     minify({ comments: false })
   ]
